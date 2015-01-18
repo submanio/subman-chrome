@@ -61,6 +61,7 @@
   (register! :chrome (c/chrome-impl.))
   (condp = (.. js/document -location -host)
     "eztv.it" (init! "epinfo")
+    "eztv.ch" (init! "epinfo")
     "thepiratebay.se" (init! "detLink")
     "thepiratebay.cr" (init! "detLink")
     "kickass.so" (init! "cellMainLink")
